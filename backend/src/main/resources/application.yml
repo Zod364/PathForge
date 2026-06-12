@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: skillmap-backend
+  data:
+    mongodb:
+      uri: mongodb+srv://SkillMapper:<Breaking*896>@cluster0.6j9reqz.mongodb.net/?appName=Cluster0
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:please-change-me-in-production-32chars-min}
+    expiry-ms: ${JWT_EXPIRY_MS:86400000}
+  cors:
+    origins: ${CORS_ORIGINS:http://localhost:5173,http://localhost:3000}
+  ai:
+    provider: ${AI_PROVIDER:none}     # openai | anthropic | none
+    api-key: ${AI_API_KEY:}
+    model: ${AI_MODEL:gpt-4o-mini}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

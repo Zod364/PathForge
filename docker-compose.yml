@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    ports: ["27017:27017"]
+    volumes: [mongo_data:/data/db]
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    ports: ["8080:8080"]
+    depends_on: [mongo]
+    environment:
+      MONGO_URI: mongodb://mongo:27017/skillmap
+      JWT_SECRET: please-change-me-in-production-32chars-min
+      JWT_EXPIRY_MS: 86400000
+      AI_PROVIDER: none
+      AI_API_KEY: ""
+      AI_MODEL: gpt-4o-mini
+      CORS_ORIGINS: http://localhost:5173
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports: ["5173:5173"]
+    depends_on: [backend]
+    environment:
+      VITE_API_URL: http://localhost:8080
+
+volumes:
+  mongo_data:

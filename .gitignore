@@ -1,0 +1,16 @@
+# deps
+node_modules/
+target/
+dist/
+build/
+.DS_Store
+*.log
+
+# env
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.iml
