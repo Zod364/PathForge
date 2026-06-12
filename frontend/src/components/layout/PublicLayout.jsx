@@ -79,7 +79,6 @@ export default function PublicLayout() {
       <footer className="border-t border-border mt-20">
         <div className="max-w-7xl mx-auto px-6 py-8 text-sm text-muted flex flex-col md:flex-row items-center justify-between gap-3">
           <span>© {new Date().getFullYear()} SkillMap · Build the skills. Ship the proof.</span>
-          <span className="text-xs">Made with <span className="text-mint">●</span> mint</span>
         </div>
       </footer>
     </div>

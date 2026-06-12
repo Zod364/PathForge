@@ -6,7 +6,7 @@ spring:
     name: skillmap-backend
   data:
     mongodb:
-      uri: mongodb+srv://SkillMapper:<Breaking*896>@cluster0.6j9reqz.mongodb.net/?appName=Cluster0
+      uri: mongodb+srv://SkillMapper:<Breaking*896cd ..>@cluster0.6j9reqz.mongodb.net/?appName=Cluster0
 
 app:
   jwt:
