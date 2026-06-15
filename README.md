@@ -11,10 +11,11 @@ Dark-gray + mint-green learning platform with role/skill-based roadmaps, quizzes
 ```bash
 docker compose up --build
 ```
+- Site URL → https://pathforge.website  or pathforge.website
 - Frontend → http://localhost:5173
 - Backend  → http://localhost:8080/api
 - Swagger  → http://localhost:8080/swagger-ui.html
-- Admin    → `admin@pathforge.dev` / `Admin@123`
+- Admin    → `************@pathforge.dev` / `*********`
 
 ## Run without Docker
 ```bash
@@ -30,6 +31,7 @@ Copy `.env.example` → `.env` in both `backend/` and `frontend/`.
 
 ### Backend env
 ```
+Backend runtime rnvironment: https://skillmap-production-723e.up.railway.app/
 MONGO_URI=mongodb://localhost:27017/pathforge
 JWT_SECRET=change-me-super-secret-at-least-32-chars
 JWT_EXPIRY_MS=86400000
@@ -40,7 +42,9 @@ AI_MODEL=gpt-4o-mini
 
 ### Frontend env
 ```
+Vercel :https://skill-map-alpha.vercel.app/
 VITE_API_URL=http://localhost:8080
+VITE_API_URL=https://skillmap-production-723e.up.railway.app/
 ```
 
 ## Features
