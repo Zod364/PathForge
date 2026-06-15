@@ -1,4 +1,4 @@
-# SkillMap
+# PathForge
 
 Dark-gray + mint-green learning platform with role/skill-based roadmaps, quizzes, projects, resources, docs, AI-assisted learning, and a SaaS-grade admin dashboard.
 
@@ -14,7 +14,7 @@ docker compose up --build
 - Frontend → http://localhost:5173
 - Backend  → http://localhost:8080/api
 - Swagger  → http://localhost:8080/swagger-ui.html
-- Admin    → `admin@skillmap.dev` / `Admin@123`
+- Admin    → `admin@pathforge.dev` / `Admin@123`
 
 ## Run without Docker
 ```bash
@@ -30,7 +30,7 @@ Copy `.env.example` → `.env` in both `backend/` and `frontend/`.
 
 ### Backend env
 ```
-MONGO_URI=mongodb://localhost:27017/skillmap
+MONGO_URI=mongodb://localhost:27017/pathforge
 JWT_SECRET=change-me-super-secret-at-least-32-chars
 JWT_EXPIRY_MS=86400000
 AI_PROVIDER=openai        # openai | anthropic | none
