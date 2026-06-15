@@ -15,7 +15,7 @@ export default function Register() {
     setLoading(true);
     try {
       await register(form);
-      toast.success("Welcome to SkillMap!");
+      toast.success("Welcome to PathForge!");
       nav("/", { replace: true });
     } catch (err) {
       toast.error(err?.response?.data?.error || "Registration failed");
@@ -29,7 +29,7 @@ export default function Register() {
       <div className="w-full max-w-sm">
         <Link to="/" className="flex items-center gap-2 justify-center mb-6">
           <span className="w-9 h-9 rounded-xl bg-mint-soft grid place-items-center"><Sparkles className="w-4 h-4 text-mint" /></span>
-          <span className="font-sora font-semibold text-lg">SkillMap</span>
+          <span className="font-sora font-semibold text-lg">PathForge</span>
         </Link>
         <form onSubmit={submit} className="card p-6 space-y-4">
           <h1 className="text-xl font-sora font-semibold">Create your account</h1>

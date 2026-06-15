@@ -24,7 +24,7 @@ export default function PublicLayout() {
             <span className="w-8 h-8 rounded-lg bg-mint-soft grid place-items-center ring-1 ring-mint/30">
               <Sparkles className="w-4 h-4 text-mint" />
             </span>
-            <span>SkillMap</span>
+            <span>PathForge</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
@@ -78,7 +78,7 @@ export default function PublicLayout() {
 
       <footer className="border-t border-border mt-20">
         <div className="max-w-7xl mx-auto px-6 py-8 text-sm text-muted flex flex-col md:flex-row items-center justify-between gap-3">
-          <span>© {new Date().getFullYear()} SkillMap · Build the skills. Ship the proof.</span>
+          <span>© {new Date().getFullYear()} PathForge · Build the skills. Ship the proof.</span>
         </div>
       </footer>
     </div>

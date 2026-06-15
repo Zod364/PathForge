@@ -26,7 +26,7 @@ export default function Settings() {
       </div>
       <div className="card p-6">
         <h3 className="font-sora font-semibold mb-3">Theme</h3>
-        <p className="text-sm text-muted">SkillMap ships in <span className="text-mint">dark-gray + mint</span>. More themes coming soon.</p>
+        <p className="text-sm text-muted">PathForge ships in <span className="text-mint">dark-gray + mint</span>. More themes coming soon.</p>
       </div>
     </div>
   );

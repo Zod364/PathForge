@@ -27,7 +27,7 @@ export default function Dashboard() {
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl md:text-3xl font-sora font-semibold">Dashboard</h1>
-        <p className="text-muted text-sm mt-1">Overview of activity across SkillMap.</p>
+        <p className="text-muted text-sm mt-1">Overview of activity across PathForge.</p>
       </div>
 
       <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">

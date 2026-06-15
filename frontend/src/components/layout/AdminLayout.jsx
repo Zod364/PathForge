@@ -47,7 +47,7 @@ export default function AdminLayout() {
           <span className="w-8 h-8 rounded-lg bg-mint-soft grid place-items-center ring-1 ring-mint/30">
             <Sparkles className="w-4 h-4 text-mint" />
           </span>
-          <span className="font-sora font-semibold">SkillMap <span className="text-muted text-xs">· admin</span></span>
+          <span className="font-sora font-semibold">PathForge <span className="text-muted text-xs">· admin</span></span>
         </Link>
         <div className="py-4 flex-1 overflow-auto"><NavItems /></div>
         <div className="p-3 border-t border-border">
@@ -63,7 +63,7 @@ export default function AdminLayout() {
           <div className="absolute inset-0 bg-black/50" onClick={() => setOpen(false)} />
           <aside className="absolute left-0 top-0 bottom-0 w-72 bg-[#11151c] border-r border-border flex flex-col">
             <div className="h-16 px-5 flex items-center justify-between border-b border-border">
-              <span className="font-sora font-semibold">SkillMap</span>
+              <span className="font-sora font-semibold">PathForge</span>
               <button className="btn-ghost px-2" onClick={() => setOpen(false)}><X className="w-4 h-4" /></button>
             </div>
             <div className="py-4 flex-1 overflow-auto"><NavItems onClick={() => setOpen(false)} /></div>
